@@ -1,0 +1,69 @@
+.hero-kontakt{
+    background-image: url("images/kontakt.png");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -70vh;
+}
+
+.udaje{
+    margin-bottom: 20vh;
+    margin-left: 20vw;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    border-radius: 2vw;
+    position: relative;
+}
+
+.hanka-kontakt{
+    width: 13vw;
+    position: absolute;
+    bottom: -5vh;
+    left: -7vw;
+    transform: rotate(-10deg);
+    border-radius: 50%;
+}
+
+.udaje h2{
+    font-size: 4rem;
+}
+
+.ikonky{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ikonky i{
+    font-size: 6rem;
+    color: #c4edd1;
+    background-color: #C166C0;
+    border-radius: 50%;
+    width: 5.5vw;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8vw;
+}
+h2 {
+    font-size: 1.6vw;
+}
+p {
+    font-size: 1.1vw;
+}
+q {
+    font-size: 1.1vw;
+}

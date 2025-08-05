@@ -1,0 +1,607 @@
+/* =========================
+   RESET & BASE STYLES
+   ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0ede1;
+    font-family: "Quicksand", sans-serif;
+    padding-top: 10vh;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+/* Base Typography */
+p {
+    font-size: 1.1vw;
+}
+
+q {
+    font-size: 1.1vw;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+/* Navigation Typography */
+nav ul li {
+    list-style: none;
+    font-size: 1.6vw;
+}
+
+.header-green .bx-caret-down {
+    color: #C166C0;
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+
+.header-pink .bx-caret-down {
+    color: #c4edd1;
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+
+/* Footer Typography */
+.footer-section h3 {
+    color: #C166C0;
+    font-size: 1.5vw;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1.1vw;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.footer-section a {
+    color: #C166C0;
+    font-size: 1.6vw;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a {
+    font-size: 1.5vw;
+}
+
+.footer-bottom p {
+    font-size: 1.1vw;
+    color: #C166C0;
+}
+
+/* Button Typography */
+button {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4vw;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C166C0;
+    height: 4vh;
+    color: #c4edd1;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 2vh;
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0.2vw solid white;
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   HEADER STYLES
+   ========================= */
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s, width 0.3s, transform 0.3s;
+}
+
+.header.shrink {
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    max-width: 800px;
+    height: auto;
+    width: 70%;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Header Color Variations */
+.header-pink {
+    background-color: #C166C0;
+}
+
+.header-pink.shrink {
+    background-color: rgba(193, 102, 192, 0.95);
+}
+
+.header-green {
+    background-color: #c4edd1;
+}
+
+.header-green.shrink {
+    background-color: rgba(196, 237, 209, 0.95);
+}
+
+/* Header Text Colors */
+.header-pink a,
+.header-pink h1,
+.header-pink h2 {
+    color: #c4edd1;
+}
+
+.header-green a,
+.header-green h1,
+.header-green h2 {
+    color: #C166C0;
+}
+
+/* Header Icons */
+.header-pink .bx-home {
+    color: #c4edd1;
+}
+
+.header-green .bx-home {
+    color: #C166C0;
+}
+
+.header-pink .bx-caret-down {
+    color: #c4edd1;
+}
+
+.header-green .bx-caret-down {
+    color: #C166C0;
+}
+
+.o-mne-text h2{
+    color: #C166C0;
+}
+
+.odstavec-nadpis{
+    color: #c4edd1;
+}
+
+/* =========================
+   NAVIGATION STYLES
+   ========================= */
+nav{
+    width: 30%;
+}
+
+.header.shrink nav{
+    width: 45%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bx-caret-down {
+    color: #C166C0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.bx-home{
+    font-size: 2rem;
+    color: #c4edd1;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+.hero{
+    background-image: url("images/index.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: -30vh;
+    left: 0;
+    right: 0;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #a54fa4;
+}
+
+/* =========================
+   LOGO SECTION
+   ========================= */
+.logo{
+    width: 30vw;
+}
+
+/* =========================
+   ABOUT SECTION
+   ========================= */
+.o-mne{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+}
+
+.o-mne-text{
+    width: 60vw;
+    background-color: #c4edd1;
+    height: fit-content;
+    padding: 3.5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vw;
+    border-radius: 2vw 0 0 2vw;
+    text-align: justify;
+}
+
+/* =========================
+   GALLERY SECTION
+   ========================= */
+.ukazky{
+    background-color: #c4edd1;
+    width: fit-content;
+    padding: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    margin: auto;
+    margin-bottom: 15vh;
+}
+
+.ukazky-fialova{
+    background-color: #B38FEE;
+    width: fit-content;
+    padding: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    margin: auto;
+    margin-bottom: 15vh;
+}
+
+.ukazka{
+    width: 20vw;
+    aspect-ratio: 1/1;
+}
+
+.ukazka-reference{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    border-color: white;
+    border-style: solid;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer{
+    background-color: #E7DBAD;
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(193, 102, 192, 0.2);
+}
+
+/* =========================
+   RESPONSIVE STYLES
+   ========================= */
+@media (max-width: 800px) and (min-width: 401px) {
+    h1{
+        font-size: 3.5vw;
+    }
+
+    h2{
+        font-size: 3vw;
+    }
+
+    nav ul li{
+        font-size: 3vw;
+    }
+
+    .footer-section h3{
+        font-size: 2.5vw;
+    }
+
+    .footer-section p{
+        font-size: 2vw;
+    }
+
+    .footer-section a{
+        font-size: 2vw;
+    }
+
+    p{
+        font-size: 2vw;
+    }
+
+    .header-green.shrink h1{
+        font-size: 3vw;
+    }
+
+    .header-green.shrink ul li{
+        font-size: 2.8vw;
+    }
+
+    .header-green .bx-caret-down {
+        font-size: 3vw;
+    }
+
+    .header-pink .bx-caret-down {
+        font-size: 3vw;
+    }
+
+    .footer-bottom p{
+        font-size: 2vw;
+    }
+
+    .header.shrink {
+        width: 90%;
+        padding: 8px 15px;
+        border-radius: 30px;
+        top: 1vh;
+    }
+
+    .header.shrink nav {
+        width: 60%;
+    }
+
+    .header.shrink .logo {
+        width: 35vw;
+    }
+
+    .o-mne{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 50vw;
+        z-index: 1;
+    }
+
+    .o-mne-text{
+        border-radius: 4vw;
+        width: 78.39vw;
+        padding-top: 15vh;
+        margin-top: -25vw;
+    }
+
+    .ukazky{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ukazky-fialova{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ukazka{
+        width: 38vw;
+    }
+
+    .header-pink h1,
+    .header-green h1 {
+        font-size: 3.5vw;
+    }
+
+    .header-pink ul li,
+    .header-green ul li {
+        font-size: 3vw;
+    }
+
+    .header-pink.shrink h1,
+    .header-green.shrink h1 {
+        font-size: 3vw;
+    }
+
+    .header-pink.shrink ul li,
+    .header-green.shrink ul li {
+        font-size: 2.8vw;
+    }
+}
+
+@media(max-width: 400px){
+    h1{
+        font-size: 6.5vw;
+    }
+
+    h2{
+        font-size: 5.5vw;
+    }
+
+    nav ul li{
+        font-size: 6vw;
+    }
+
+    .footer-section h3{
+        font-size: 5vw;
+    }
+
+    .footer-section p{
+        font-size: 4.5vw;
+    }
+
+    footer .footer-bottom p {
+        font-size: 3.5vw;
+    }
+
+    .footer-section a{
+        font-size: 4.5vw;
+    }
+
+    p{
+        font-size: 4.5vw;
+    }
+
+
+    .header .bx-caret-down {
+        font-size: 6vw;
+    }
+
+    nav{
+        width: 50vw;
+    }
+
+    .o-mne{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .o-mne-text{
+        border-radius: 5vw;
+        width: 78.39vw;
+        padding-top: 15vh;
+        margin-top: -35vw;
+        text-align: center;
+    }
+
+    .logo{
+        z-index: 1;
+        width: 60vw;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ukazky{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ukazky-fialova{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ukazka{
+        width: 77vw;
+    }
+
+    .header.shrink {
+        width: 95%;
+        height: 8vh;
+        padding: 10px 15px;
+        border-radius: 40px;
+        top: 2vh;
+    }
+
+    .header.shrink nav {
+        width: 65%;
+    }
+
+    .header.shrink h1{
+        font-size: 6vw;
+    }
+
+    .header.shrink nav ul li{
+        font-size: 6vw;
+    }
+
+    .header.shrink .logo {
+        width: 45vw;
+    }
+
+    .header-pink h1,
+    .header-green h1 {
+        font-size: 6.5vw;
+    }
+
+    .header-pink ul li,
+    .header-green ul li {
+        font-size: 6vw;
+    }
+
+    .header-pink.shrink h1,
+    .header-green.shrink h1 {
+        font-size: 6vw;
+    }
+
+    .header-pink.shrink ul li,
+    .header-green.shrink ul li {
+        font-size: 6vw;
+    }
+}
