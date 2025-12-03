@@ -2,7 +2,7 @@
    CSS z: sluzby.css
    ============================================================= */
 
-.hero-sluzby{
+.hero-sluzby {
     background-image: url("images/hero-sluzby.png");
     background-size: cover;
     background-position: center;
@@ -13,7 +13,7 @@
     margin-bottom: 10vh;
 }
 
-.sluzby{
+.sluzby {
     margin-left: 10vw;
     width: 50%;
     position: absolute;
@@ -29,7 +29,7 @@
     text-align: justify;
 }
 
-.buttons{
+.buttons {
     width: fit-content;
     display: flex;
     align-items: center;
@@ -55,11 +55,11 @@
     background-color: #a54fa4;
 }
 
-.nadpis-sluzby{
+.nadpis-sluzby {
     margin-left: 8vw;
 }
 
-.liceni{
+.liceni {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -72,7 +72,7 @@
     margin-bottom: 10vh;
 }
 
-.liceni-odstavec{
+.liceni-odstavec {
     width: 50vw;
     padding-left: 4vw;
     padding-right: 4vw;
@@ -84,14 +84,14 @@
     list-style: none;
     padding-left: 2.5em;
     margin-left: 2vw;
-  }
-  
+}
+
 .rtenka-list li {
     position: relative;
     margin-bottom: 1em;
     font-size: 1.1vw;
 }
-  
+
 .rtenka-list li::before {
     content: "";
     position: absolute;
@@ -99,12 +99,13 @@
     top: 0.15em;
     width: 24px;
     height: 24px;
-    background-image: url("images/lipstick.png"); /* nahraď skutečnou cestou k obrázku */
+    background-image: url("images/lipstick.png");
+    /* nahraď skutečnou cestou k obrázku */
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.liceni-fotka{
+.liceni-fotka {
     width: 20vw;
     border-color: white;
     border-style: solid;
@@ -113,21 +114,24 @@
 h1 {
     font-size: 1.8vw;
 }
+
 h2 {
     font-size: 1.6vw;
 }
+
 p {
     font-size: 1.1vw;
 }
+
 q {
     font-size: 1.1vw;
 }
 
-.liceni ul{
+.liceni ul {
     padding-left: 1.5vw;
 }
 
-ul li{
+ul li {
     font-size: 1.1vw;
 }
 
@@ -178,7 +182,7 @@ ul li{
         height: 70vh;
         margin-bottom: 5vh;
     }
-    
+
     .sluzby {
         width: 70%;
         margin-left: 5vw;
@@ -201,29 +205,29 @@ ul li{
         font-size: 2.8vw;
     }
 
-    .sluzby{
+    .sluzby {
         border-radius: 30px;
         width: 90vw;
     }
 
-    .liceni{
+    .liceni {
         width: 90vw;
         padding-right: 3vw;
     }
 
-    .buttons button{
+    .buttons button {
         font-size: 2vw;
     }
 
-    .sluzby h2{
+    .sluzby h2 {
         font-size: 3vw;
     }
 
-    .sluzby p{
+    .sluzby p {
         font-size: 2vw;
     }
-    
-    .nadpis-sluzby{
+
+    .nadpis-sluzby {
         font-size: 4vw;
     }
 
@@ -231,11 +235,11 @@ ul li{
         font-size: 3vw;
     }
 
-    .liceni-fotka{
+    .liceni-fotka {
         width: 38vw;
     }
 
-    .rtenka-list{
+    .rtenka-list {
         margin-left: 5vw;
     }
 
@@ -243,14 +247,14 @@ ul li{
         font-size: 2vw;
         margin-bottom: 1.5vh;
     }
-    
+
     .rtenka-list li::before {
         width: 20px;
         height: 20px;
         left: -2em;
         top: 0.2em;
     }
-    
+
     .liceni-odstavec ul li {
         font-size: 2vw;
     }
@@ -282,7 +286,7 @@ ul li{
         margin-bottom: -15vh;
         position: static;
     }
-    
+
     .sluzby {
         width: 90vw;
         margin: 0 auto;
@@ -334,12 +338,12 @@ ul li{
     .rtenka-list {
         margin-left: 10vw;
     }
-    
+
     .rtenka-list li {
         font-size: 4.5vw;
         margin-bottom: 2vh;
     }
-    
+
     .rtenka-list li::before {
         width: 18px;
         height: 18px;
@@ -421,15 +425,15 @@ ul li{
         width: fit-content;
     }
 
-    .header-pink h1{
+    .header-pink h1 {
         display: none;
     }
 
-    .header-pink nav{
+    .header-pink nav {
         width: 80%;
     }
 
-    .header-pink.shrink nav{
+    .header-pink.shrink nav {
         width: 85%;
     }
 }
