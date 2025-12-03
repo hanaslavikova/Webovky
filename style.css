@@ -513,6 +513,29 @@ footer {
 }
 
 @media(max-width: 430px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero {
+        order: 1;
+    }
+
+    .ukazky {
+        order: 2;
+        margin-top: -30vh;
+        margin-bottom: -5vh;
+    }
+
+    .o-mne {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
     h1 {
         font-size: 6.5vw;
     }
